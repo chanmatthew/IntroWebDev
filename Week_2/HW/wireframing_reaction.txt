@@ -3,4 +3,11 @@ Blog - Wireframing
 Article - http://mediatemple.net/blog/tips/five-important-considerations-for-wireframing/?utm_source=weekly_newsletter&utm_medium=email&utm_campaign=aug17newsletter
 
 
-Wireframing is essential when it comes down to designing the user experience. One might be tempted to skip the wireframing altogether and go straight to building out the product. However, it is wiser to not take shortcuts as building the user experience is a group effort. Wireframing is the stage where you get input and feedback on designs. You know exactly what problems need to be solved and how to go about it. Communication is key as different groups of people prefer different levels of detail in the design. Wireframing requires few resources and helps to prevent basic problems later in the development stages.
+Wireframing is essential when it comes down to designing the user experience. 
+One might be tempted to skip the wireframing altogether and go straight to 
+building out the product. However, it is wiser to not take shortcuts as building 
+the user experience is a group effort. Wireframing is the stage where you get 
+input and feedback on designs. You know exactly what problems need to be solved 
+and how to go about it. Communication is key as different groups of people prefer 
+different levels of detail in the design. Wireframing requires few resources and 
+helps to prevent basic problems later in the development stages.
