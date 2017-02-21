@@ -7,18 +7,23 @@ Concept: I plan on creating a website that brings attention to the types of bear
  
 
 Sitemap:
+https://github.com/chanmatthew/IntroWebDev/blob/master/Week_4/Midterm%20Proposal/sitemap.png
+
+
 
 Wireframes:
 
 Homepage:
+https://github.com/chanmatthew/IntroWebDev/blob/master/Week_4/Midterm%20Proposal/homepage.png
 
 Explore:
-
- 
+https://github.com/chanmatthew/IntroWebDev/blob/master/Week_4/Midterm%20Proposal/explore.png
+https://github.com/chanmatthew/IntroWebDev/blob/master/Week_4/Midterm%20Proposal/bear_info.png
 
 Support:
-
+https://github.com/chanmatthew/IntroWebDev/blob/master/Week_4/Midterm%20Proposal/support.png
  
+
 
 Existing website/inspiration: https://www.wcs.org/
 
