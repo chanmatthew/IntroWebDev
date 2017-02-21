@@ -1,0 +1,31 @@
+Website Title: Care 4 Bears
+
+ 
+
+Concept: I plan on creating a website that brings attention to the types of bears that are currently endangered. I will include pictures, which regions they are being hunted in, and a page where others can support the cause in preserving the lives of these bears.
+
+ 
+
+Sitemap:
+
+Wireframes:
+
+Homepage:
+
+Explore:
+
+ 
+
+Support:
+
+ 
+
+Existing website/inspiration: https://www.wcs.org/
+
+ 
+
+Concepts/skills already covered to build site: nav bar, positioning elements with inline-block, fixed-positioning, google fonts, linking to other pages
+
+ 
+
+Concepts/skills needed to complete project: expandable nav bar, image slideshow, add video
