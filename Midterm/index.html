@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Care 4 Bears</title>
+		<meta name="description" content="Explore the world of endangered bears.">
+
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+		<style type="text/css">
+
+		@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+    	* {
+        	margin: 0;
+        	padding: 0;
+            box-sizing: border-box;
+            font-size: 0;
+    	}
+    
+    	body {
+      	  	font-family: 'PT Sans', sans-serif;
+            background-color: rgba(83, 45, 45, 0.9);
+    	}
+
+    	header {
+    		background-color: rgba(83, 45, 45, 0.7);
+            /*background-color: rgba(100, 100, 100, 0.8);*/
+    		width: 100%;
+            height: 50px;
+            position: fixed;
+            margin-top: -50px;
+            z-index: 10;
+            border-bottom: 1px solid #d26e6e;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+    	img.logo {
+    		display: inline-block;
+    		margin: 5px 0 0 30px;
+            height: 80%;
+    	}
+
+        h1.logo {
+            display: inline-block;
+            margin: 5px 0 0 30px;
+            color: white;
+        }
+
+        h1.logo-two {
+            display: inline-block;
+            margin: 5px 4px 0 4px;
+            color: rgba(210, 110, 110, 1);
+        }
+
+        h1.logo-three {
+            display: inline-block;
+            margin: 5px 0 0 0;
+            color: white;
+        }
+
+    	header nav {
+            display: inline-block;
+            float: right;
+    	}
+
+    	header nav ul {
+    		list-style-type: none;
+            text-align: center;
+            padding: 0;
+            margin: 0; 
+            margin-right: 20px;
+    	}
+
+    	header nav ul li {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+    	}
+
+    	header nav ul li a {
+    		text-decoration: none;
+    		color: white;
+            display: block;
+            font-size: 16px; 
+    	}
+
+        i.fa {
+            display: none;
+            color: white;
+            font-size: 24px;
+        }
+
+        header nav a:hover{
+            background-color: rgba(210, 110, 110, 1);
+            color: #FFF;
+        }
+
+    	div.container {
+    		margin-top: 50px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            background-color: blue;
+ 		}
+
+        .container img {
+            display: inline-block;
+            width: 25%;
+        }
+
+		 
+		.container img.bigimg {
+			display: block;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+		}
+
+        p.slogan {
+            color: white;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            max-height: 50px;
+            margin-top: -39px;
+            font-size: 30px;
+            background-color: rgba(83, 45, 45, 0.5);
+        }
+
+        div.info-container {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            width: 25%;
+            padding-bottom: 25%;
+            /*font-size: 20px;*/
+            background-color: rgba(83, 45, 45, 1);
+            position: relative;
+        }
+
+        p.info {
+            position: absolute;
+            color: white;
+            padding: 2.4vw 1.6vw;
+            text-align: center;
+            font-size: 2.1vw;
+        }
+
+        footer {
+            color: rgba(210, 110, 110, 1);
+            width: 100%;
+            background-color: rgba(83, 45, 45, 1);
+        }
+
+        footer div {
+            margin-left: 30px;
+            font-size: 16px;
+        }
+
+        /* Tablet Portrait size to Base 996px */
+        @media only screen and (min-width: 768px) and (max-width: 995px) {
+            div.container {
+                background-color: yellow;
+            }
+            .container img {
+                width: 33.33%;
+            }
+            p.slogan {
+                max-height: 50px;
+                margin-top: -33px;
+                font-size: 25px;
+            }
+            div.info-container {
+                width: 33.33%;
+                padding-bottom: 33.33%;
+            }
+            p.info {
+                padding: 2.4vw 3.5vw;
+                font-size: 2.7vw;
+            }
+        }
+
+        /* All Mobile Sizes Think of this as a catch all in case you miss a size */
+        @media only screen and (max-width: 767px) {
+            div.container {
+                background-color: red;
+            }
+            .container img {
+                width: 33.33%;
+            }
+            .container img.bigimg {
+                min-width: 800px;
+            }
+            p.slogan {
+                max-height: 50px;
+                margin-top: -33px;
+                font-size: 25px;
+            }
+            div.info-container {
+                width: 33.33%;
+                padding-bottom: 33.33%;
+            }
+            p.info {
+                padding: 2.4vw 3.5vw;
+                font-size: 2.7vw;
+            }
+        }
+
+        /* Mobile Landscape Size to Tablet Portrait */
+        @media only screen and (min-width: 480px) and (max-width: 767px) {
+            div.container {
+                background-color: green;
+            }
+            .container img {
+                width: 33.33%;
+            }
+            .container img.bigimg {
+                min-width: 900px;
+                margin-left: -100px;
+            }
+            p.slogan {
+                max-height: 50px;
+                margin-top: -33px;
+                font-size: 25px;
+            }
+            div.info-container {
+                width: 33.33%;
+                padding-bottom: 33.33%;
+            }
+            p.info {
+                padding: 2.4vw 3.5vw;
+                font-size: 2.7vw;
+            }
+        }
+
+        /* Mobile Portrait Size to Mobile Landscape Size */
+        @media only screen and (max-width: 479px) {
+            div.container {
+                background-color: orange;
+            }
+            .container img {
+                width: 50%;
+            }
+            .container img.bigimg {
+                min-width: 800px;
+                margin-left: -200px;
+            }
+            p.slogan {
+                max-height: 50px;
+                margin-top: -27px;
+                font-size: 20px;
+            }
+            div.info-container {
+                width: 50%;
+                padding-bottom: 50%;
+            }
+            p.info {
+                padding: 2.4vw 3.9vw;
+                font-size: 4.3vw;
+            }
+
+            i.fa {
+                display: inline-block;
+                margin-right: -20px;
+                width: 90px;
+                line-height: 50px;
+            }
+
+            i.fa > ul {
+                display: none;
+                width: 100%;
+                background-color: rgba(83, 45, 45, 0.85);
+            }
+
+            i.fa > ul li {
+                display: block;
+                width: 90px;
+            }
+
+            i.fa > ul li a {
+                display: block;
+                width: 100%;
+                margin-right: 120px;
+                font-size: 16px;
+                text-align: center;
+                font-family: 'PT Sans', sans-serif;
+            }
+
+            i.fa:hover {
+                background-color: rgba(210, 110, 110, 0.5);
+            }
+
+            i.fa:hover > ul {
+                display: block;
+            }
+
+            header nav ul li {
+                display: none;
+                width: 100px;
+                height: 50px;
+                line-height: 50px;
+            }
+
+            header nav ul li a {
+                display: none;
+            }
+        }
+
+    	</style>
+
+        <script type="text/javascript">
+
+            // var slideIndex = 0;
+            // // carousel();
+
+            // document.addEventListener('DOMContentLoaded', function() {
+            //     carousel();
+            // });
+
+            // function carousel() {
+            //     var i;
+            //     var x = document.getElementsByClassName("slide1");
+            //     for (i = 0; i < x.length; i++) {
+            //         x[i].style.display = "none";
+            //         // x[i].className = "slide1";
+            //     }
+            //     slideIndex++;
+            //     if (slideIndex > x.length) { slideIndex = 1; }
+            //     x[slideIndex - 1].style.display = "inline-block";
+            //     // x[slideIndex - 1].className += " fadeIn";
+            //     setTimeout(carousel, 3000);
+            // }
+
+        </script>
+	</head>
+
+	<body>
+	
+		<header class="sticky-navbar">
+			<a href="./index.html">
+            <h1 class="logo">CARE</h1>
+            <h1 class="logo-two">4</h1>
+            <h1 class="logo-three">BEARS</h1>
+	        </a>
+        	<nav>
+           		<ul>
+		            <li><a href="./explore.html">EXPLORE</a></li>
+		            <li><a href="./support.html">SUPPORT</a></li>
+                    <i class="fa fa-bars" aria-hidden="true">
+                        <ul>
+                            <li><a href="./explore.html">EXPLORE</a></li>
+                            <li><a href="./support.html">SUPPORT</a></li>
+                        </ul>
+                    </i>
+           		</ul>
+        	</nav>
+    	</header>
+
+    	<div class="container">
+            <img class="bigimg" src="img/frontbear3.png">
+
+            <p class="slogan">Have A Heart! Do Your Part!</p>
+
+        	<img class="slide1" src="img/americanblackbear.png">
+            <!-- <img class="slide1" src="img/andeanbear.png">
+            <img class="slide1" src="img/asiaticblackbear.png">
+            <img class="slide1" src="img/brownbear.png"> -->
+
+    		<img src="img/andeanbear.png">
+    		<img src="img/asiaticblackbear.png">
+    		<img src="img/brownbear.png">
+    		<img src="img/giantpanda.png">
+            <div class="info-container">
+                <p class="info">Care4Bears is dedicated to bringing awareness to all the types of bears that face extinction. We hold a vision of a better future for all bears.</p>
+            </div>
+    		<img src="img/polarbear.png">
+    		<img src="img/slothbear.png">
+    		<img src="img/sunbear.png">
+
+            <img src="img/americanblackbear.png">
+            <img src="img/andeanbear.png">
+            <img src="img/asiaticblackbear.png">
+
+            <footer>
+                <div class="footer">&copy; 2017 C4B</div>
+            </footer>
+            
+	    </div>
+	
+	</body>
+
+</html>
