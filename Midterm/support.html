@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Care 4 Bears</title>
+		<title>Care4Bears</title>
 		<meta name="description" content="Explore the world of endangered bears.">
 
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -113,15 +113,99 @@
             padding-top: 50px;
             width: 100%;
             height: 100%;
-            overflow: hidden;
+            /*overflow: hidden;*/
             position: relative;
             /*background-color: blue;*/
+        }
+
+        div h2 {
+            color: white;
+            text-align: center;
+            font-size: 3vw;
+            position: absolute;
+            width: 100%;
+            line-height: 3vw;
+            margin-top: -15vw;
+            /*background-color: blue;*/
+            /*opacity: 0;*/
+        }
+
+        div p.context {
+            /*display: inline-block;*/
+            color: white;
+            text-align: center;
+            font-size: 2vw;
+            position: absolute;
+            width: 70%;
+            left: 15%;
+            /*line-height: 500px;*/
+            /*height: 150px;
+            margin-top: -150px;*/
+            height: 12vw;
+            margin-top: -12vw;
+            /*background-color: green;*/
+            opacity: 0.6;
+        }
+
+        div img.bigimg {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-top: 1px solid #d26e6e;
+            border-bottom: 1px solid #d26e6e;
+            margin: 0 auto;
+            opacity: 0.7;
+        }
+
+        div button {
+            display: block;
+            font-size: 16px;
+            line-height: 30px;
+            width: 120px;
+            height: auto;
+            margin: 15px auto;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 6px;
+            border: 1px solid #d26e6e;
+        }
+
+        footer {
+            color: rgba(210, 110, 110, 1);
+            width: 100%;
+            background-color: rgba(83, 45, 45, 1);
+        }
+
+        footer div {
+            margin-left: 30px;
+            font-size: 16px;
         }
 
         /* Tablet Portrait size to Base 996px */
         @media only screen and (min-width: 768px) and (max-width: 995px) {
             div.container {
-                background-color: yellow;
+                /*background-color: yellow;*/
+            }
+
+            div h2 {
+                font-size: 3vw;
+                line-height: 3vw;
+                margin-top: -15vw;
+            }
+
+            div p.context {
+                font-size: 2vw;
+                width: 80%;
+                left: 10%;
+                height: 12vw;
+                margin-top: -12vw;
+            }
+
+            div img.bigimg {
+                min-width: 800px;
+                height: auto;
+                margin: 0 auto;
             }
             
         }
@@ -129,15 +213,46 @@
         /* All Mobile Sizes Think of this as a catch all in case you miss a size */
         @media only screen and (max-width: 767px) {
             div.container {
-                background-color: red;
+                /*background-color: red;*/
             }
             
+            div h2 {
+                display: block;
+                color: white;
+                text-align: center;
+                font-size: 24px;
+                position: static;
+                width: 100%;
+                line-height: 50px;
+                margin-top: 0vw;
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+            div p.context {
+                display: block;
+                color: white;
+                text-align: center;
+                font-size: 16px;
+                position: static;
+                width: 100%;
+                height: auto;
+                margin-top: 0vw;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding-bottom: 20px;
+                opacity: 0.6;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
         }
 
         /* Mobile Landscape Size to Tablet Portrait */
         @media only screen and (min-width: 480px) and (max-width: 767px) {
             div.container {
-                background-color: green;
+                /*background-color: green;*/
+            }
+
+            div img.bigimg {
+                min-width: 700px;
             }
             
         }
@@ -145,7 +260,12 @@
         /* Mobile Portrait Size to Mobile Landscape Size */
         @media only screen and (max-width: 479px) {
             div.container {
-                background-color: orange;
+                /*background-color: orange;*/
+            }
+
+            div img.bigimg {
+                min-width: 700px;
+                margin-left: -180px;
             }
 
             i.fa {
@@ -185,9 +305,6 @@
 
             header nav ul li {
                 display: none;
-                width: 100px;
-                height: 50px;
-                line-height: 50px;
             }
 
             header nav ul li a {
@@ -223,6 +340,17 @@
 
         <div class="container">
             <p class="page">SUPPORT</p>
+
+            <img class="bigimg" src="img/grizzly.jpeg">
+
+            <h2>HELP SAVE THE BEARS</h2>
+            <p class="context">Care4Bears is a small non-profit organization that runs solely off of donations. We have some of the most dedicated people working around the clock to bring awareness of this epidemic to others all around the world, but we cannot do this without your help. We need your help to continue this important work.</p>
+
+            <button>DONATE!</button>
+
+            <footer>
+                <div class="footer">&copy; 2017 C4B</div>
+            </footer>
         </div>
     
     </body>
