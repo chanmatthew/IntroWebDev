@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dynamic DOM 2 Ways</title>
+		<meta charset="utf-8">
+
+	</head>
+	<body>
+	
+		<p onClick="addSingleP()">Add a single p using strings</p>
+		<button onClick="addMultiP(6)">Add multiple p the right way using DOM nodes</button>
+	
+		<div id="content">
+			<p>This is some dummy text that will be overwritten by the InnerHTML hacky way</p>
+		</div>
+
+		<!-- Script is down here because it loads after content is defined -->
+		<script type="text/javascript">
+			var content;
+			content = document.getElementById('content');
+			console.log(content);
+
+			function addSingleP() {
+				// content.innerHTML = "some text";
+				content.innerHTML = "<p>This is a poorly instantiated paragraph using string trickery!</p>";
+			}
+
+			// proper dynamic dom
+			function addMultiP(num) {
+				for (var i = 0; i < num; i++) {
+					// console.log(i);
+					var p = document.createElement('P');
+					// console.log(p);
+					var text = document.createTextNode('This is paragraph number ' + i);
+					p.appendChild(text);
+					content.appendChild(p);
+				}
+			}
+
+		</script>
+
+	</body>
+</html>

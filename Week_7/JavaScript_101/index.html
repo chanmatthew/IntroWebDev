@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS 101</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+
+			var myVar = "number"
+			console.log(myVar);
+
+			var myOtherVar;
+			console.log(myOtherVar);
+
+			myOtherVar = 4 + 4;
+			console.log(myOtherVar);
+			console.log(typeof(myOtherVar));
+
+			var temp = 60;
+			console.log("Today's temperature is " + temp + " degrees F.");
+
+			function calcBill(a, b) {
+				var sum = a + b;
+				alert("Your bill is $" + sum);
+			}
+
+			// calcBill(100.00, 50.55);
+
+			var isOn = true;
+
+			function switchOnOff() {
+				if (isOn) {
+					alert("isOn is TRUE. Switching to FALSE now.");
+					isOn = false;
+				}
+
+				else {
+					alert("isOn is FALSE. Switching to TRUE now");
+					isOn = true;;
+				}
+			}
+
+			function countToN(num) {
+				for (var i = 0; i < num; i++) {
+					console.log(i);
+				}
+			}
+
+			countToN(25);
+
+		</script>
+	</head>
+	<body>
+	
+		<button onClick="calcBill(45.00, 5.25)">Calculate Bill</button>
+		<button onClick="switchOnOff()">Toggle On Off</button>
+	
+	</body>
+</html>
