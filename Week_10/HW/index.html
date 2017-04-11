@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Posts</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <style type="text/css">
+    	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+		* {
+	        margin: 0;
+	        padding: 0;
+	        box-sizing: border-box;
+	        font-size: 0;
+	    }
+	    body {
+	    	font-family: 'Open Sans', sans-serif;
+	    }
+	    #slider-container {
+	    	background-color: rgba(240, 240, 240, 0.7);
+	    	width: 1280px;
+	    	margin: 0 auto;
+	    	position: relative;
+	    	margin-top: 50px;
+	    	padding-top: 50px;
+	    	padding-bottom: 20px;
+	    }
+	    h1.title {
+			font-size: 20px;
+			font-weight: normal;
+			position: absolute;
+			top: 15px;
+			left: 80px;
+			color: rgba(0, 0, 0, 0.7);
+		}
+	    #slider {
+			overflow: hidden;
+			width: 1140px;
+			margin: 0 auto;
+			position: relative;
+	    }
+	    #post-container {
+	    	width: 3800px;
+	    	position: relative;
+	    	right: 0px;
+	    }
+		div.container {
+			background-color: rgba(255, 255, 255, 0.8);
+			display: inline-block;
+			width: 360px;
+			margin: 10px;
+			float: right;
+			padding: 10px 0;
+			position: relative;
+			box-shadow: 0px 0px 8px #AAA;
+			border-radius: 2px;
+			padding-bottom: 20px;
+		}
+		div.post-img {
+			background-color: pink;
+			position: absolute;
+			top: 10px;
+			left: 5%;
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+			font-size: 14px;
+			text-align: center;
+			padding-top: 10px;
+			color: white;
+		}
+		p {
+			color: rgba(0, 0, 0, 0.8);
+		}
+		p.post-name {
+			position: absolute;
+			font-size: 14px;
+			left: 70px;
+			top: 10px;
+		}
+		p.post-date {
+			position: absolute;
+			font-size: 12px;
+			left: 70px;
+			top: 33px;
+		}
+		p.post-time {
+			display: inline-block;
+			position: absolute;
+			font-size: 12px;
+			left: 120px;
+			top: 33px;
+		}
+		p.post-title {
+			display: inline-block;
+			width: 100%;
+			line-height: 40px;
+			padding-right: 5%;
+			text-align: right;
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+		}
+		div.divider {
+			background-color: rgba(200, 200, 200, 0.5);
+			width: 90%;
+			height: 1px;
+			display: inline-block;
+			position: absolute;
+			top: 60px;
+			left: 5%;
+		}
+		p.post-msg {
+			display: inline-block;
+			font-size: 14px;
+			margin-top: 20px;
+			margin-left: 8%;
+			width: 84%;
+			height: 50%;
+			color: rgba(0, 0, 0, 0.7);
+		}
+		#left-button {
+			font-size: 14px;
+			position: absolute;
+			top: 40%;
+			z-index: 90;
+			left: 30px;
+			width: 40px;
+			height: 80px;
+			border-radius: 2px;
+			background-color: rgba(255, 255, 255, 0);
+			border: none;
+			color: rgba(0, 0, 0, 0.5);
+		}
+		#right-button {
+			font-size: 14px;
+			position: absolute;
+			top: 40%;
+			z-index: 90;
+			right: 30px;
+			width: 40px;
+			height: 80px;
+			border-radius: 2px;
+			background-color: rgba(255, 255, 255, 0);
+			border: none;
+			color: rgba(0, 0, 0, 0.5);
+		}
+		#left-button.post-button:hover {
+			box-shadow: 0px 0px 6px #AAA;
+			cursor: pointer;
+			font-size: 22px;
+		}
+		#right-button.post-button:hover {
+			box-shadow: 0px 0px 6px #AAA;
+			cursor: pointer;
+			font-size: 22px;
+		}
+
+    </style>
+    <script type="text/javascript">
+		var numOfLeft;
+		var numOfRight = 0;
+
+		document.addEventListener('DOMContentLoaded', function() {
+			var currentdate = new Date(); 
+	    	var month = currentdate.getMonth() + 1;
+	    	var day = currentdate.getDate();
+	    	var year = currentdate.getFullYear();
+	    	var hour = currentdate.getHours();
+	    	var minute = currentdate.getMinutes();
+
+	    	if (minute < 10) minute = "0" + minute;
+	    	year -= 2000;
+
+	    	var ampm;
+	    	if (hour < 12) {
+	    		ampm = "AM";
+	    	}
+	    	else if (hour == 12) {
+	    		ampm = "PM";
+	    	}
+	    	else if (hour > 12) {
+	    		ampm = "PM";
+	    		hour -= 12;
+	    	}
+
+	    	var date = month + "/" + day + "/" + year;
+	    	var time = hour + ":" + minute + " " + ampm;
+
+			var users = ['Bob', 'Chris', 'Danny', 'Jen', 'Pop', 'Jim', 'Matt', 'Brian', 'Patrick', 'Albert'];
+			for (var i = users.length - 1; i >= 0; i--) {
+				var name = users[i];
+				var title = "creative title xd";
+				var message = " - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra lacus elit, sit amet congue purus suscipit in. Curabitur luctus dictum laoreet. Sed efficitur maximus magna et mattis. Vivamus ac vulputate dolor, in tincidunt purus. Proin ultricies libero a velit ornare vestibulum eu ac purus. Nam laoreet, justo sit amet placerat pulvinar, augue augue congue felis, id lacinia nisl nisl eget ipsum. Phasellus eget placerat ex. In eu cursus leo, at ornare quam. Ut ac tellus ac neque aliquet dapibus. Mauris vitae magna tellus. Proin elementum lacinia est, vitae imperdiet turpis luctus non.";
+
+				var postContainer = document.getElementById("post-container");
+				var parentDiv = document.createElement("div");
+				parentDiv.className = "container";
+
+				var newParaName = document.createElement("p");
+				newParaName.innerHTML = name;
+				newParaName.className = "post-name";
+				parentDiv.appendChild(newParaName);
+
+				var newParaTitle = document.createElement("p");
+				newParaTitle.innerHTML = title;
+				newParaTitle.className = "post-title";
+				parentDiv.appendChild(newParaTitle);
+
+				var newParaMsg = document.createElement("p");
+				newParaMsg.innerHTML = message;
+				newParaMsg.className = "post-msg";
+				parentDiv.appendChild(newParaMsg);
+
+				var newImg = document.createElement("div");
+				newImg.className = "post-img";
+				newImg.innerHTML = "PIC";
+				parentDiv.appendChild(newImg);
+
+				var newDate = document.createElement("p");
+				newDate.innerHTML = date;
+				newDate.className = "post-date";
+				parentDiv.appendChild(newDate);
+
+				var newTime = document.createElement("p");
+				newTime.innerHTML = time;
+				newTime.className = "post-time";
+				parentDiv.appendChild(newTime);
+
+				var divider = document.createElement("div");
+				divider.className = "divider";
+				parentDiv.appendChild(divider);
+
+				postContainer.appendChild(parentDiv);
+			}
+
+			var containerWidth = getComputedStyle(document.getElementById("post-container")).width;
+			var sliderWidth = getComputedStyle(document.getElementById("slider")).width;
+			numOfLeft = (parseInt(containerWidth, 10) - parseInt(sliderWidth, 10)) / 380;
+			console.log(numOfLeft);
+        });
+
+		$(document).ready(function(){			
+		    $("#left-button.post-button").click(function(){
+		    	if (numOfRight > 0) {
+			        $("#post-container").animate({right: "-=380px"}, "easein");
+			        numOfRight--;
+			        numOfLeft++;
+			        console.log(numOfLeft);
+			    }
+		    });
+		
+		    $("#right-button.post-button").click(function(){		    	
+			    if (numOfLeft > 0) {
+			        $("#post-container").animate({right: "+=380px"}, "easein");
+			        numOfLeft--;
+			        numOfRight++;
+			        console.log(numOfLeft);
+			    }
+		    });
+		});
+
+    </script>
+
+</head>
+
+<body id="body">
+	<div id="slider-container">
+		<h1 class="title">Posts</h1>
+		<div id="slider">
+			<div id="post-container"></div>
+		</div>
+		<button id="left-button" class="post-button"><</button>
+		<button id="right-button" class="post-button">></button>
+	</div>
+
+</body>
+
+</html>
