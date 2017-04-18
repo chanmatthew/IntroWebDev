@@ -10,13 +10,13 @@ https://world.new7wonders.com/
 
 ## Wireframes
 ### Home Page
-![Home Page Wireframe](img/final_wireframe_1 "Home Page Wireframe")
+![Home Page Wireframe](img/final_wireframe_1.png "Home Page Wireframe")
 
 ### Description Page
-![Description Page Wireframe](img/final_wireframe_2 "Description Page Wireframe")
+![Description Page Wireframe](img/final_wireframe_2.png "Description Page Wireframe")
 
 ### Menu Dropdown
-![Menu Dropdown Wireframe](img/final_wireframe_3 "Menu Dropdown Wireframe")
+![Menu Dropdown Wireframe](img/final_wireframe_3.png "Menu Dropdown Wireframe")
 
 ## To Do
 * Animations with Javascript/jQuery
