@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GSAP Tweening 101</title>
+    <style type="text/css">
+		#sb {
+			position: absolute;
+			top: 500px;
+			left: 0;
+		}
+    </style>
+</head>
+
+<body>
+	<img src="img/soccer-ball.png" id="sb">
+
+	<img src="img/basket-ball.png" class="bball">
+	<img src="img/basket-ball.png" class="bball">
+	<img src="img/basket-ball.png" class="bball">
+	<img src="img/basket-ball.png" class="bball">
+	<img src="img/basket-ball.png" class="bball">
+
+	<!-- greensock and plugins -->
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+
+	<!-- our custom scripts -->
+    <script type="text/javascript">
+    	var sb = document.getElementById('sb');
+    	// using the TweenMax class from the animation api to animate over 3 sec and change img location
+    	// TweenMax.to(element, time in seconds, {options object}, optional delay)
+    	// have to set the start position and type in CSS for position tweens
+    	// TweenMax.to(sb, 3, {left: 800, top: 300});
+    	TweenMax.to(sb, 3, {x: 800, y: -500, roation: 720, scale: 0.5, ease: Elastic.easeOut});
+
+    	TweenMax.staggerTo(".bball", 1, {y: 500, rotation: 360, delay: 0, ease: Bounce.easeOut}, 0.5);
+
+    	TweenMax.to(".bball, #sb", 1, {opacity: 0, delay: 5, onComplete: imDone});
+
+    	function imDone() {
+    		alert("I'm Done Animating");
+    	}
+    </script>
+</body>
+
+</html>
