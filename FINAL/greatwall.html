@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>WOW - Great Wall of China</title>
+    <meta name="description" content="Eplore the seven wonders of the world!">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pagestructure.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/explore.css">
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa0VTfNjw9vrzMAtMfdDoYulig14orjm4&callback=initMap">
+    </script>
+
+    <script src="js/menu.js" type="text/javascript"></script>
+    <script src="js/map.js" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
+
+    <script src="js/gsapscrollto.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="nav-guide">
+        <header>
+            <a href="./index.html">
+                <h1 class="logo">
+                    WOW
+                </h1>
+            </a>
+            <nav>
+                <ul>
+                    <i class="fa fa-bars menu" aria-hidden="true" onClick="openMenu()">
+                        <ul>
+                            <li><a href="chichenitza.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                CHICHÉN ITZÁ</a></li>
+                            <li><a href="christredeemer.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                CHRIST THE REDEEMER</a></li>
+                            <li><a href="colosseum.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                COLOSSEUM</a></li>
+                            <li><a href="greatwall.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                GREAT WALL OF CHINA</a></li>
+                            <li><a href="machupicchu.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                MACHU PICCHU</a></li>
+                            <li><a href="petra.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                PETRA</a></li>
+                            <li><a href="tajmahal.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                TAJ MAHAL</a></li>
+                        </ul>
+                    </i>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="bigimg-container">
+        <img id="worldimg" src="img/world2.png">
+        <div id="slogan">GREAT WALL OF CHINA</div>
+    </div>
+    <div id="floor1Panel" class="container">
+
+        <div class="floorbutton" id="floor1Btn">ABOUT</div>
+        <div class="floorbutton" id="floor2Btn">VIDEO</div>
+        <div class="floorbutton" id="floor3Btn">INTERESTING FACTS</div>
+        <div class="floorbutton" id="floor4Btn">MAP</div>
+
+        <h2>GREAT WALL OF CHINA
+            <div>Huairou, China</div>
+        </h2>
+
+        
+        <p>The Great Wall of China is a series of fortifications made of stone, brick, tamped earth, wood, and other materials, generally built along an east-to-west line across the historical northern borders of China to protect the Chinese states and empires against the raids and invasions of the various nomadic groups of the Eurasian Steppe. Several walls were being built as early as the 7th century BC; these, later joined together and made bigger and stronger, are now collectively referred to as the Great Wall. Especially famous is the wall built 220–206 BC by Qin Shi Huang, the first Emperor of China. Little of that wall remains. Since then, the Great Wall has on and off been rebuilt, maintained, and enhanced; the majority of the existing wall is from the Ming Dynasty.</p>
+
+        <p>Other purposes of the Great Wall have included border controls, allowing the imposition of duties on goods transported along the Silk Road, regulation or encouragement of trade and the control of immigration and emigration. Furthermore, the defensive characteristics of the Great Wall were enhanced by the construction of watch towers, troop barracks, garrison stations, signaling capabilities through the means of smoke or fire, and the fact that the path of the Great Wall also served as a transportation corridor.</p>
+
+        <p>The Great Wall stretches from Dandong in the east, to Lop Lake in the west, along an arc that roughly delineates the southern edge of Inner Mongolia. A comprehensive archaeological survey, using advanced technologies, has concluded that the Ming walls measure 8,850 km (5,500 mi). This is made up of 6,259 km (3,889 mi) sections of actual wall, 359 km (223 mi) of trenches and 2,232 km (1,387 mi) of natural defensive barriers such as hills and rivers. Another archaeological survey found that the entire wall with all of its branches measure out to be 21,196 km (13,171 mi).</p>
+
+        <div id="video-container">
+            <h3>VIDEO</h3>
+            <div id="video-parent">
+                <iframe src="https://www.youtube.com/embed/VjlydnRqcmw" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="facts-container">
+            <h3>INTERESTING FACTS</h3>
+            <img id="facts-map" src="img/map.png">
+            <div id="divider"></div>
+            <div class="fact one">Location
+                <div>Huairou, China</div>
+            </div>
+            <div class="fact two">
+                <div></div>
+            </div>
+            <div class="fact three">Instance of
+                <div>cordon</div>
+            </div>
+        </div>
+
+        <div id="map-container">
+            <h3>MAP THE WONDERS!</h3>
+            <div id="map"></div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="footer-text">&copy 2017 Wonders of the World</div>;
+    </footer>
+</body>
+
+</html>

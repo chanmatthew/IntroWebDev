@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>WOW - Christ the Redeemer</title>
+    <meta name="description" content="Eplore the seven wonders of the world!">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pagestructure.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/explore.css">
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa0VTfNjw9vrzMAtMfdDoYulig14orjm4&callback=initMap">
+    </script>
+
+    <script src="js/menu.js" type="text/javascript"></script>
+    <script src="js/map.js" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
+
+    <script src="js/gsapscrollto.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="nav-guide">
+        <header>
+            <a href="./index.html">
+                <h1 class="logo">
+                    WOW
+                </h1>
+            </a>
+            <nav>
+                <ul>
+                    <i class="fa fa-bars menu" aria-hidden="true" onClick="openMenu()">
+                        <ul>
+                            <li><a href="chichenitza.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                CHICHÉN ITZÁ</a></li>
+                            <li><a href="christredeemer.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                CHRIST THE REDEEMER</a></li>
+                            <li><a href="colosseum.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                COLOSSEUM</a></li>
+                            <li><a href="greatwall.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                GREAT WALL OF CHINA</a></li>
+                            <li><a href="machupicchu.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                MACHU PICCHU</a></li>
+                            <li><a href="petra.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                PETRA</a></li>
+                            <li><a href="tajmahal.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                TAJ MAHAL</a></li>
+                        </ul>
+                    </i>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="bigimg-container">
+        <img id="worldimg" src="img/world2.png">
+        <div id="slogan">CHRIST THE REDEEMER</div>
+    </div>
+    <div id="floor1Panel" class="container">
+
+        <div class="floorbutton" id="floor1Btn">ABOUT</div>
+        <div class="floorbutton" id="floor2Btn">VIDEO</div>
+        <div class="floorbutton" id="floor3Btn">INTERESTING FACTS</div>
+        <div class="floorbutton" id="floor4Btn">MAP</div>
+
+        <h2>CHRIST THE REDEEMER
+            <div>Rio de Janeiro, Brazil</div>
+        </h2>
+
+        
+        <p>Christ the Redeemer (Portuguese: Cristo Redentor, standard Brazilian Portuguese: [ˈkɾistu χedẽˈtoɾ], local dialect: [ˈkɾiʃtu ɦedẽˈtoɦ]) is an Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil, created by Polish-French sculptor Paul Landowski and built by the Brazilian engineer Heitor da Silva Costa, in collaboration with the French engineer Albert Caquot. The face was created by the Romanian artist Gheorghe Leonida. The statue is 30 metres (98 ft) tall, not including its 8-metre (26 ft) pedestal, and its arms stretch 28 metres (92 ft) wide. By comparison, it is approximately two-thirds the height of the Statue of Liberty’s height from base to torch.</p>
+
+        <p>The statue weighs 635 metric tons (625 long, 700 short tons), and is located at the peak of the 700-metre (2,300 ft) Corcovado mountain in the Tijuca Forest National Park overlooking the city of Rio. A symbol of Christianity across the world, the statue has also become a cultural icon of both Rio de Janeiro and Brazil, and is listed as one of the New Seven Wonders of the World. It is made of reinforced concrete and soapstone, and was constructed between 1922 and 1931.</p>
+
+        <div id="video-container">
+            <h3>VIDEO</h3>
+            <div id="video-parent">
+                <iframe src="https://www.youtube.com/embed/VOaDuwkGWbg" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="facts-container">
+            <h3>INTERESTING FACTS</h3>
+            <img id="facts-map" src="img/map.png">
+            <div id="divider"></div>
+            <div class="fact one">Architect
+                <div>Heitor da Silva Costa</div>
+            </div>
+            <div class="fact two">Material used
+                <div>concrete & glass</div>
+            </div>
+            <div class="fact three">Intance of
+                <div>monument</div>
+            </div>
+        </div>
+
+        <div id="map-container">
+            <h3>MAP THE WONDERS!</h3>
+            <div id="map"></div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="footer-text">&copy 2017 Wonders of the World</div>;
+    </footer>
+</body>
+
+</html>

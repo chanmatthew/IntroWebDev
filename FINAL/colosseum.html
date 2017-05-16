@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>WOW - Colosseum</title>
+    <meta name="description" content="Eplore the seven wonders of the world!">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pagestructure.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/explore.css">
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa0VTfNjw9vrzMAtMfdDoYulig14orjm4&callback=initMap">
+    </script>
+
+    <script src="js/menu.js" type="text/javascript"></script>
+    <script src="js/map.js" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
+
+    <script src="js/gsapscrollto.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="nav-guide">
+        <header>
+            <a href="./index.html">
+                <h1 class="logo">
+                    WOW
+                </h1>
+            </a>
+            <nav>
+                <ul>
+                    <i class="fa fa-bars menu" aria-hidden="true" onClick="openMenu()">
+                        <ul>
+                            <li><a href="chichenitza.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                CHICHÉN ITZÁ</a></li>
+                            <li><a href="christredeemer.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                CHRIST THE REDEEMER</a></li>
+                            <li><a href="colosseum.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                COLOSSEUM</a></li>
+                            <li><a href="greatwall.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                GREAT WALL OF CHINA</a></li>
+                            <li><a href="machupicchu.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                MACHU PICCHU</a></li>
+                            <li><a href="petra.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                PETRA</a></li>
+                            <li><a href="tajmahal.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                TAJ MAHAL</a></li>
+                        </ul>
+                    </i>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="bigimg-container">
+        <img id="worldimg" src="img/world2.png">
+        <div id="slogan">COLOSSEUM</div>
+    </div>
+    <div id="floor1Panel" class="container">
+
+        <div class="floorbutton" id="floor1Btn">ABOUT</div>
+        <div class="floorbutton" id="floor2Btn">VIDEO</div>
+        <div class="floorbutton" id="floor3Btn">INTERESTING FACTS</div>
+        <div class="floorbutton" id="floor4Btn">MAP</div>
+
+        <h2>COLOSSEUM
+            <div>Roma, Italy</div>
+        </h2>
+
+        
+        <p>The Colosseum or Coliseum (/kɒləˈsiːəm/ kol-ə-SEE-əm), also known as the Flavian Amphitheatre (Latin: Amphitheatrum Flavium; Italian: Anfiteatro Flavio [amfiteˈaːtro ˈflaːvjo] or Colosseo [kolosˈsɛːo]), is an oval amphitheatre in the centre of the city of Rome, Italy. Built of concrete and sand, it is the largest amphitheatre ever built. The Colosseum is situated just east of the Roman Forum. Construction began under the emperor Vespasian in AD 72, and was completed in AD 80 under his successor and heir Titus. Further modifications were made during the reign of Domitian (81–96). These three emperors are known as the Flavian dynasty, and the amphitheatre was named in Latin for its association with their family name (Flavius).</p>
+
+        <p>The Colosseum could hold, it is estimated, between 50,000 and 80,000 spectators, having an average audience of some 65,000; it was used for gladiatorial contests and public spectacles such as mock sea battles (for only a short time as the hypogeum was soon filled in with mechanisms to support the other activities), animal hunts, executions, re-enactments of famous battles, and dramas based on Classical mythology. The building ceased to be used for entertainment in the early medieval era. It was later reused for such purposes as housing, workshops, quarters for a religious order, a fortress, a quarry, and a Christian shrine.</p>
+
+        <p>Although partially ruined because of damage caused by earthquakes and stone-robbers, the Colosseum is still an iconic symbol of Imperial Rome. It is one of Rome’s most popular tourist attractions and has also links to the Roman Catholic Church, as each Good Friday the Pope leads a torchlit “Way of the Cross” procession that starts in the area around the Colosseum.</p>
+
+        <p>The Colosseum is also depicted on the Italian version of the five-cent euro coin.</p>
+
+        <p>The Colosseum’s original Latin name was Amphitheatrum Flavium, often anglicized as Flavian Amphitheater. The building was constructed by emperors of the Flavian dynasty, following the reign of Nero. This name is still used in modern English, but generally the structure is better known as the Colosseum. In antiquity, Romans may have referred to the Colosseum by the unofficial name Amphitheatrum Caesareum (with Caesareum an adjective pertaining to the title Caesar), but this name may have been strictly poetic as it was not exclusive to the Colosseum; Vespasian and Titus, builders of the Colosseum, also constructed an amphitheater of the same name in Puteoli (modern Pozzuoli).</p>
+
+        <p>The name Colosseum has long been believed to be derived from a colossal statue of Nero nearby (the statue of Nero was named after the Colossus of Rhodes). This statue was later remodeled by Nero’s successors into the likeness of Helios (Sol) or Apollo, the sun god, by adding the appropriate solar crown. Nero’s head was also replaced several times with the heads of succeeding emperors. Despite its pagan links, the statue remained standing well into the medieval era and was credited with magical powers. It came to be seen as an iconic symbol of the permanence of Rome.</p>
+
+        <p>In the 8th century, a famous epigram attributed to the Venerable Bede celebrated the symbolic significance of the statue in a prophecy that is variously quoted: Quamdiu stat Colisæus, stat et Roma; quando cadet colisæus, cadet et Roma; quando cadet Roma, cadet et mundus (“as long as the Colossus stands, so shall Rome; when the Colossus falls, Rome shall fall; when Rome falls, so falls the world”). This is often mistranslated to refer to the Colosseum rather than the Colossus (as in, for instance, Byron’s poem Childe Harold’s Pilgrimage). However, at the time that the Pseudo-Bede wrote, the masculine noun coliseus was applied to the statue rather than to what was still known as the Flavian amphitheatre.</p>
+
+        <p>The Colossus did eventually fall, possibly being pulled down to reuse its bronze. By the year 1000 the name “Colosseum” had been coined to refer to the amphitheatre. The statue itself was largely forgotten and only its base survives, situated between the Colosseum and the nearby Temple of Venus and Roma.</p>
+
+        <p>The name further evolved to Coliseum during the Middle Ages. In Italy, the amphitheatre is still known as il Colosseo, and other Romance languages have come to use similar forms such as Coloseumul (Romanian), le Colisée (French), el Coliseo (Spanish) and o Coliseu (Portuguese).</p>
+
+        <div id="video-container">
+            <h3>VIDEO</h3>
+            <div id="video-parent">
+                <iframe src="https://www.youtube.com/embed/OOylD1KC6kc" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="facts-container">
+            <h3>INTERESTING FACTS</h3>
+            <img id="facts-map" src="img/map.png">
+            <div id="divider"></div>
+            <div class="fact one">Location
+                <div>Roma, Italy</div>
+            </div>
+            <div class="fact two">
+                <div></div>
+            </div>
+            <div class="fact three">Instance of
+                <div>Roman amphitheatre</div>
+            </div>
+        </div>
+
+        <div id="map-container">
+            <h3>MAP THE WONDERS!</h3>
+            <div id="map"></div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="footer-text">&copy 2017 Wonders of the World</div>;
+    </footer>
+</body>
+
+</html>

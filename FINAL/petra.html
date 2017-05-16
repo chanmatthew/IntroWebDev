@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>WOW - Petra</title>
+    <meta name="description" content="Eplore the seven wonders of the world!">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pagestructure.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/explore.css">
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa0VTfNjw9vrzMAtMfdDoYulig14orjm4&callback=initMap">
+    </script>
+
+    <script src="js/menu.js" type="text/javascript"></script>
+    <script src="js/map.js" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
+
+    <script src="js/gsapscrollto.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="nav-guide">
+        <header>
+            <a href="./index.html">
+                <h1 class="logo">
+                    WOW
+                </h1>
+            </a>
+            <nav>
+                <ul>
+                    <i class="fa fa-bars menu" aria-hidden="true" onClick="openMenu()">
+                        <ul>
+                            <li><a href="chichenitza.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                CHICHÉN ITZÁ</a></li>
+                            <li><a href="christredeemer.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                CHRIST THE REDEEMER</a></li>
+                            <li><a href="colosseum.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                COLOSSEUM</a></li>
+                            <li><a href="greatwall.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                GREAT WALL OF CHINA</a></li>
+                            <li><a href="machupicchu.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                MACHU PICCHU</a></li>
+                            <li><a href="petra.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                PETRA</a></li>
+                            <li><a href="tajmahal.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                TAJ MAHAL</a></li>
+                        </ul>
+                    </i>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="bigimg-container">
+        <img id="worldimg" src="img/world2.png">
+        <div id="slogan">PETRA</div>
+    </div>
+    <div id="floor1Panel" class="container">
+
+        <div class="floorbutton" id="floor1Btn">ABOUT</div>
+        <div class="floorbutton" id="floor2Btn">VIDEO</div>
+        <div class="floorbutton" id="floor3Btn">INTERESTING FACTS</div>
+        <div class="floorbutton" id="floor4Btn">MAP</div>
+
+        <h2>PETRA
+            <div>Ma'an Governorate, Jordan</div>
+        </h2>
+
+        
+        <p>Petra (Arabic: البتراء, Al-Batrāʾ; Ancient Greek: Πέτρα), originally known to the Nabataeans as Raqmu, is a historical and archaeological city in southern Jordan. The city is famous for its rock-cut architecture and water conduit system. Another name for Petra is the Rose City due to the color of the stone out of which it is carved.</p>
+
+        <p>Established possibly as early as 312 BC as the capital city of the Arab Nabataeans, it is a symbol of Jordan, as well as Jordan’s most-visited tourist attraction. The Nabateans were nomadic Arabs who benefited from the proximity of Petra to the regional trade routes, in becoming a major trading hub, thus enabling them to gather wealth. The Nabateans are also known for their great ability in constructing efficient water collecting methods in the barren deserts and their talent in carving structures into solid rocks. It lies on the slope of Jebel al-Madhbah (identified by some as the biblical Mount Hor) in a basin among the mountains which form the eastern flank of Arabah (Wadi Araba), the large valley running from the Dead Sea to the Gulf of Aqaba. Petra has been a UNESCO World Heritage Site since 1985.</p>
+
+        <p>The site remained unknown to the western world until 1812, when it was introduced by Swiss explorer Johann Ludwig Burckhardt. It was described as “a rose-red city half as old as time” in a Newdigate Prize-winning poem by John William Burgon. UNESCO has described it as “one of the most precious cultural properties of man’s cultural heritage”. Petra was named amongst the New7Wonders of the World in 2007 and was also chosen by the Smithsonian Magazine as one of the “28 Places to See Before You Die”.</p>
+
+        <div id="video-container">
+            <h3>VIDEO</h3>
+            <div id="video-parent">
+                <iframe src="https://www.youtube.com/embed/dB7o_83y4aU" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="facts-container">
+            <h3>INTERESTING FACTS</h3>
+            <img id="facts-map" src="img/map.png">
+            <div id="divider"></div>
+            <div class="fact one">Elevation above sea level
+                <div>800 meters</div>
+            </div>
+            <div class="fact two">Material used
+                <div>Sandstone</div>
+            </div>
+            <div class="fact three">Instance of
+                <div>Ancient city & archaeological site</div>
+            </div>
+        </div>
+
+        <div id="map-container">
+            <h3>MAP THE WONDERS!</h3>
+            <div id="map"></div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="footer-text">&copy 2017 Wonders of the World</div>;
+    </footer>
+</body>
+
+</html>

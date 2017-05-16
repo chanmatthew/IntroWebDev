@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>WOW - Chichen Itza</title>
+    <meta name="description" content="Eplore the seven wonders of the world!">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pagestructure.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/explore.css">
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa0VTfNjw9vrzMAtMfdDoYulig14orjm4&callback=initMap">
+    </script>
+
+    <script src="js/menu.js" type="text/javascript"></script>
+    <script src="js/map.js" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
+
+    <script src="js/gsapscrollto.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="nav-guide">
+        <header>
+            <a href="./index.html">
+                <h1 class="logo">
+                    WOW
+                </h1>
+            </a>
+            <nav>
+                <ul>
+                    <i class="fa fa-bars menu" aria-hidden="true" onClick="openMenu()">
+                        <ul>
+                            <li><a href="chichenitza.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                CHICHÉN ITZÁ</a></li>
+                            <li><a href="christredeemer.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                CHRIST THE REDEEMER</a></li>
+                            <li><a href="colosseum.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                COLOSSEUM</a></li>
+                            <li><a href="greatwall.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                GREAT WALL OF CHINA</a></li>
+                            <li><a href="machupicchu.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                MACHU PICCHU</a></li>
+                            <li><a href="petra.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                PETRA</a></li>
+                            <li><a href="tajmahal.html">
+                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                TAJ MAHAL</a></li>
+                        </ul>
+                    </i>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="bigimg-container">
+        <img id="worldimg" src="img/world2.png">
+        <div id="slogan">CHICHÉN ITZÁ</div>
+    </div>
+    <div id="floor1Panel" class="container">
+
+        <div class="floorbutton" id="floor1Btn">ABOUT</div>
+        <div class="floorbutton" id="floor2Btn">VIDEO</div>
+        <div class="floorbutton" id="floor3Btn">INTERESTING FACTS</div>
+        <div class="floorbutton" id="floor4Btn">MAP</div>
+
+        <h2>CHICHÉN ITZÁ
+            <div>Yucatan, Mexico</div>
+        </h2>
+
+        
+        <p>El Castillo (Spanish pronunciation: [el kas’tiʎo]), Spanish for “the castle”), also known as the Temple of Kukulcan, is a Mesoamerican step-pyramid that dominates the center of the Chichen Itza archaeological site in the Mexican state of Yucatán. The building is more formally designated by archaeologists as Chichen Itza Structure 5B18.</p>
+
+        <p>Built by the pre-Columbian Maya civilization sometime between the 9th and 12th centuries CE, El Castillo served as a temple to the god Kukulkan, the Yucatec Maya Feathered Serpent deity closely related to the god Quetzalcoatl known to the Aztecs and other central Mexican cultures of the Postclassic period.</p>
+
+        <p>The pyramid consists of a series of square terraces with stairways up each of the four sides to the temple on top. Sculptures of plumed serpents run down the sides of the northern balustrade. During the spring and autumn equinoxes, the late afternoon sun strikes off the northwest corner of the pyramid and casts a series of triangular shadows against the northwest balustrade, creating the illusion of a feathered serpent “crawling” down the pyramid. The event has been very popular, but it is questionable whether it is a result of a purposeful design. Each of the pyramid’s four sides has 91 steps which, when added together and including the temple platform on top as the final “step”, produces a total of 365 steps (which is equal to the number of days of the Haab’ year).</p>
+
+        <p>The structure is 24 m (79 ft) high, plus an additional 6 m (20 ft) for the temple. The square base measures 55.3 m (181 ft) across.</p>
+
+        <div id="video-container">
+            <h3>VIDEO</h3>
+            <div id="video-parent">
+                <iframe src="https://www.youtube.com/embed/kyvw6G9Max0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="facts-container">
+            <h3>INTERESTING FACTS</h3>
+            <img id="facts-map" src="img/map.png">
+            <div id="divider"></div>
+            <div class="fact one">Location
+                <div>Yucatan Mexico</div>
+            </div>
+            <div class="fact two">Height
+                <div>30 Meters</div>
+            </div>
+            <div class="fact three">Instance of
+                <div>pyamid</div>
+            </div>
+        </div>
+
+        <div id="map-container">
+            <h3>MAP THE WONDERS!</h3>
+            <div id="map"></div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="footer-text">&copy 2017 Wonders of the World</div>;
+    </footer>
+</body>
+
+</html>

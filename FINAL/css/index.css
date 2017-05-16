@@ -1,0 +1,138 @@
+div.container h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 0;
+    font-weight: bold;
+}
+div.container div.imgs {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*margin-top: 50px;*/
+}
+div img.slidecopy {
+    position: absolute;
+    display: block;
+    width: 100%;
+    min-width: 1536px;
+    min-height: 400px;
+    height: auto;
+    left: 50%;
+    margin-left: -768px;
+    z-index: 1;
+}
+div img.slides.current {
+    position: absolute;
+    width: 100%;
+    min-width: 1536px;
+    min-height: 400px;
+    height: auto;
+    left: 50%;
+    margin-left: -768px;
+    transition: all 0.8s ease;
+    z-index: 2;
+}
+div img.slides.next {
+    position: absolute;
+    width: 100%;
+    min-width: 1536px;
+    min-height: 400px;
+    height: auto;
+    left: 50%;
+    margin-left: 768px;
+    z-index: 3;
+}
+div.container div.imgs img.arrow-left {
+    position: absolute;
+    z-index: 21;
+    left: 20px;
+    bottom: 44%;
+    opacity: 0.05;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+div.container div.imgs img.arrow-right {
+    position: absolute;
+    z-index: 21;
+    right: 20px;
+    bottom: 44%;
+    opacity: 0.05;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+div.container div.imgs img.arrow-left:hover {
+    opacity: 0.4;
+}
+div.container div.imgs img.arrow-right:hover {
+    opacity: 0.4;
+}
+div.container div.imgs div.bar {
+    position: absolute;
+    background-color: rgba(220, 220, 220, 0.7);
+    border-radius: 2px;
+    z-index: 21;
+    height: 5px;
+    width: 60px;
+    opacity: 1;
+    left: 50%;
+    bottom: 20px;
+    cursor: pointer;
+}
+div.container div.imgs div.bar.one {
+    margin-left: -240px;
+}
+div.container div.imgs div.bar.two {
+    margin-left: -170px;
+}
+div.container div.imgs div.bar.three {
+    margin-left: -100px;
+}
+div.container div.imgs div.bar.four {
+    margin-left: -30px;
+}
+div.container div.imgs div.bar.five {
+    margin-left: 40px;
+}
+div.container div.imgs div.bar.six {
+    margin-left: 110px;
+}
+div.container div.imgs div.bar.seven {
+    margin-left: 180px;
+}
+div.container div.imgs div.progress {
+    height: 100%;
+    width: 0%;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+div.front-message {
+    position: absolute;
+    font-size: 24px;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+div.front-message.picked {
+    opacity: 1;
+    transition: all 2.5s ease;
+}
+#learn-more {
+    position: absolute;
+    margin-top: 70px;
+    font-size: 14px;
+    line-height: 30px;
+    width: 120px;
+    text-align: center;
+    left: 50%;
+    margin-left: -60px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#learn-more:hover {
+    background-color: black;
+    color: white;
+}
