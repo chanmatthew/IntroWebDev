@@ -235,7 +235,7 @@ function initMap() {
 
 
     chichenitza.addListener('click', function() {
-        window.location.href = "#";
+        window.location.href = "chichenitza.html";
     });
 
     chichenitza.addListener('mouseover', function() {
