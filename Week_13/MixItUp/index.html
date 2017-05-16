@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mix It Up</title>
+    <style type="text/css">
+* {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body,
+    button {
+        font-family: 'Helvetic Neue', arial, sans-serif;
+    }
+    
+    .container {
+        position: relative;
+        padding: 2% 2% 0;
+        text-align: justify;
+        /* font-size: 0.1px; */
+        background: #DDD;
+        min-height: 200px;
+    }
+    
+    .container:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .container .mix,
+    .container .gap {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .container .mix {
+        text-align: left;
+        background-color: #AAA;
+        margin-bottom: 2%;
+        border-radius: 8px;
+        display: none;
+        height: 200px;
+    }
+    
+    .container .mix p {
+        font-size: 16px;
+    }
+    /*     .container .mix:after { */
+    /* content: attr(class); */
+    
+/*        color: white;
+        font-size: 16px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 4% 6%;
+        font-weight: 300;
+    }*/
+
+/*     .container .mix:before {
+        content: '';
+        display: inline-block;
+        padding-top: 60%;
+    } */
+
+@media all and (min-width: 768px) {
+    .container .mix,
+    .container .gap {
+        width: 48%;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .container .mix,
+    .container .gap {
+        width: 24%;
+    }
+}
+
+.controls {
+    background-color: #111;
+    padding: 1%;
+    color: white;
+}
+label {
+    font-weight: 400;
+    margin: 0 20px 0 0;
+}
+button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #666;
+    border: 0;
+    color: #EEE;
+    font-size: 16px;
+    font-weight: 100;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.active {
+    background: #999;
+}
+button:focus {
+    outline: 0 none;
+}
+button + label {
+    margin-left: 1em;
+}
+
+.container .fail-message {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.container .fail-message:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.container.fail .fail-message {
+    content: '';
+    opacity: 1;
+    pointer-events: all;
+}
+.container .fail-message span {
+    display: inline-block;
+    font-weight: 500;
+    color: #333;
+    font-size: 20px;
+    vertical-align: middle;
+}
+    </style>
+</head>
+
+<body>
+    <div class="controls">
+        <label>Filter: </label>
+        <button class="filter" data-filter=".dog">Dog</button>
+        <button class="filter" data-filter=".cat">Cat</button>
+        <button class="filter" data-filter=".goat">Goat</button>
+        <button id="reset">Reset</button>
+        <label>Sort: </label>
+        <button class="sort" data-sort="default">Default</button>
+        <button class="sort" data-sort="myorder:asc">Ascending</button>
+        <button class="sort" data-sort="myorder:desc">Descending</button>
+        <button class="sort" data-sort="random">Random</button>
+    </div>
+
+    <div class="container" id="Container">
+        <div class="fail-message"><span>No Items were found matching the current filters</span></div>
+        <div class="mix dog" data-myorder="2">
+            <p>French Word....</p>
+        </div>
+        <div class="mix cat" data-myorder="1">
+            <p>French Word....</p>
+        </div>
+        <div class="mix goat" data-myorder="3">
+            <p>French Word....</p>
+        </div>
+        <div class="mix dog cat" data-myorder="5">
+            <p>French Word....</p>
+        </div>
+        <div class="mix goat cat" data-myorder="6">
+            <p>French Word....</p>
+        </div>
+        <div class="mix goat dog" data-myorder="4">
+            <p>French Word....</p>
+        </div>
+        <div class="gap"></div>
+        <div class="gap"></div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    
+    <script type="text/javascript">
+    // $(document).ready(function(){});
+
+    $('#reset').click(function() {
+        $('#Container').mixItUp('filter', '');
+    });
+
+    $(function() {
+
+        $('#Container').mixItUp({
+            load: {
+                filter: 'all'
+            },
+            controls: {
+                toggleFilterButtons: true,
+                toggleLogic: 'and'
+            },
+            animation: {
+                enable: true,
+                effects: 'fade scale rotateX stagger',
+                duration: 1000,
+                easing: 'ease',
+                perspectiveDistance: '3000',
+                perspectiveOrigin: '50% 50%',
+                queue: true,
+                queueLimit: 1,
+                animateChangeLayout: false,
+                animateResizeContainer: false,
+                animateResizeTargets: false,
+                staggerSequence: false,
+                reverseOut: false
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>
